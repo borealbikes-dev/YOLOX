@@ -1,5 +1,7 @@
 # borealbikes-dev/tensorturtle modifications
 
+Remove some ONNX packages from `requirements.txt` because they are both unncessary and not available for Jetson (ARM).
+
 ---
 
 <div align="center"><img src="assets/logo.png" width="350"></div>
