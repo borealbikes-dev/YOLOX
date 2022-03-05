@@ -241,7 +241,7 @@ class YOLOXHead(nn.Module):
         grids = []
         strides = []
         for (hsize, wsize), stride in zip(self.hw, self.strides):
-            yv, xv = torch.meshgrid([torch.arange(hsize), torch.arange(wsize)], indexing="ij")
+            #yv, xv = torch.meshgrid([torch.arange(hsize), torch.arange(wsize)], indexing="ij")
             # remove indexing keyword to fix "TypeError:meshgrid() got an unexpected keyword argument 'indexing'"
             # in PyTorch 1.9.0, the available version in Jetson container format
             yv, xv = torch.meshgrid([torch.arange(hsize), torch.arange(wsize)])
