@@ -3,6 +3,7 @@
 ## When/Where is this repo used?
 
 + Currently, this repo was used to create the [`merckx-yolox`](https://hub.docker.com/repository/docker/tensorturtle/merckx-yolox) Docker image. I used [codename-merckx/project/yolox_ws/Dockerfile](https://github.com/borealbikes-dev/codename-merckx/blob/main/project/yolox_ws/Dockerfile) to create the base image, then within an interactive terminal from that container, installed YOLOX from the instructions below. Then, I committed that image to what is now `merckx-yolox` image.
++ In the future, this process will be automated within the Dockerfile. There seems to be some CUDA issues preventing this.
 
 ## Modifications
 
