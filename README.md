@@ -8,7 +8,7 @@
 ## Modifications
 
 + Remove some ONNX packages from `requirements.txt` because they are both unncessary and not available for Jetson (ARM).
-
++ Remove 'indexing' argument from `torch.meshgrid()` in [yolo_head.py](https://github.com/borealbikes-dev/YOLOX/blob/main/yolox/models/yolo_head.py) to fix "TypeError: meshgrid() got an unexpected keyword argument 'indexing' in PyTorch 1.9.0, which is the PyTorch version available in Jetson containers.
 
 ---
 
